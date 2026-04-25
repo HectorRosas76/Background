@@ -1,0 +1,31 @@
+
+### consultar amigos
+GET http://127.0.0.1:8000/amigos
+
+### registrar amigos
+POST http://127.0.0.1:8000/amigos
+Content-Type: application/json
+
+{
+    "nombre": "Juan",
+    "email": "juan@test.com",
+    "telefono": "12345",
+    "apodo" : "El J"
+}
+
+### modificar amigos
+PUT http://127.0.0.1:8000/amigos/2
+Content-Type: application/json
+
+{
+    "nombre": "Pepe",
+    "email": "arturo@test.com",
+    "telefono": "654321",
+    "apodo" : "El pe"
+}
+
+### borrar amigo
+DELETE http://127.0.0.1:8000/amigos/4
+
+### consultar amigo
+GET http://127.0.0.1:8000/amigos/4
