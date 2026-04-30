@@ -12,3 +12,21 @@ Content-Type: application/json
     "num1": 50,
     "num2": 30
 }
+
+### probar multiplicar
+POST http://127.0.0.1:8000/multiplicar
+Content-Type: application/json
+
+{
+    "num1": 50,
+    "num2": 30
+}
+
+### probar dividir
+POST http://127.0.0.1:8000/dividir
+Content-Type: application/json
+
+{
+    "num1": 50,
+    "num2": 30
+}
