@@ -35,34 +35,6 @@ CREATE TABLE `contactos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Indexes for dumped tables
---
-
---
--- Indexes for table `contactos`
---
-ALTER TABLE `contactos`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `contactos`
---
-ALTER TABLE `contactos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
-
-
---
 -- Estructura de tabla para la tabla `amigos`
 --
 
@@ -70,7 +42,7 @@ CREATE TABLE `amigos` (
   `id` int(11) NOT NULL,
   `nombre` varchar(150) NOT NULL,
   `apodo` varchar(150) DEFAULT NULL,
-  `teléfono` varchar(15) NOT NULL,
+  `telefono` varchar(15) NOT NULL,
   `email` varchar(150) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -94,3 +66,28 @@ ALTER TABLE `amigos`
 ALTER TABLE `amigos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `contactos`
+--
+ALTER TABLE `contactos`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `contactos`
+--
+ALTER TABLE `contactos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

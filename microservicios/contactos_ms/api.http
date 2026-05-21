@@ -37,7 +37,7 @@ Content-Type: application/json
 }
 
 ### modificar contactos
-PUT http://127.0.0.1:8000/contacto/2
+PUT http://127.0.0.1:8000/contacto/1
 Content-Type: application/json
 
 {

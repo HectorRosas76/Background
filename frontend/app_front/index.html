@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/modals.css">
+</head>
+
+<body>
+    <h1>Lista de contactos</h1>
+    <section class="content">
+        <section>
+            <table id="contactosTb">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3">No hay datos...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="contentForm" class="content_form">
+            <h2>Guardar contacto</h2>
+            <form name="contactoForm">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" name="telefono" required>
+                </div>
+                <div>
+                    <button type="reset">Cancelar</button>
+                    <button type="submit">Guardar</button>
+                </div>
+            </form>
+        </section>
+    </section>
+    <div id="modal1" class="modal close">
+        <div class="modal_content">
+            <p>Datos guardados!!!</p>
+            <button>Aceptar</button>
+        </div>
+    </div>
+
+    <script src="js/modal.js"></script>
+    <script src="js/contactos.js"></script>
+</body>
+
+</html>
